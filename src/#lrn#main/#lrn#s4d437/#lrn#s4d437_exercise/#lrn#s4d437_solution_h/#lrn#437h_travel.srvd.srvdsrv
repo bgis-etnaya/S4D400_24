@@ -1,0 +1,5 @@
+@EndUserText.label: 'Flight Travel Service Definition'
+define service /LRN/437H_TRAVEL {
+  expose /LRN/437h_C_Travel;
+  expose /LRN/437h_C_TravelItem;
+}

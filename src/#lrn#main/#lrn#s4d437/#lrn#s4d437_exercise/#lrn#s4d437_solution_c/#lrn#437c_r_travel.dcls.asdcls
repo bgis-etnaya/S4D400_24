@@ -1,0 +1,10 @@
+@EndUserText.label: 'Access Control for Flight Travel'
+@MappingRole: true
+define role /LRN/437C_R_TRAVEL {
+    grant select on /LRN/437c_R_Travel
+    where (AgencyId) = 
+          aspect pfcg_auth(/LRN/AGCY, 
+                           /LRN/AGCY,
+                           ACTVT = '03'
+                          );                        
+}

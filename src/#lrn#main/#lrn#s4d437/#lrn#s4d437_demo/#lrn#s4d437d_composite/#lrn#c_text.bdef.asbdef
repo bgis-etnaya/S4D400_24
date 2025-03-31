@@ -1,0 +1,31 @@
+projection;
+strict ( 2 );
+
+define behavior for /LRN/C_Text alias Text
+{
+  use create;
+  use update;
+  use delete;
+
+  use action condense_text;
+
+  use association _Line { create; }
+}
+
+define behavior for /LRN/C_Line alias Line
+{
+  use update;
+  use delete;
+
+  use association _Text;
+  use association _Word { create; }
+}
+
+define behavior for /LRN/C_Word alias Word
+{
+  use update;
+  use delete;
+
+  use association _Line;
+  use association _Text;
+}

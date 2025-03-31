@@ -1,0 +1,9 @@
+CLASS /lrn/bp_r_text DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF /lrn/r_text.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS /LRN/BP_R_TEXT IMPLEMENTATION.
+ENDCLASS.

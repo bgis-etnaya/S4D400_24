@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for /LRN/437_C_TRAVELLOG alias TravelLog
+use etag
+
+{
+
+}

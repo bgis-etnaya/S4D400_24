@@ -1,0 +1,38 @@
+@Metadata.layer: #CORE
+
+@UI: {
+   headerInfo: {
+     typeName: 'Booking Class',
+     typeNamePlural: 'Booking Classes',
+     title:          { value: 'Description'},
+     description:    { value: 'Description' }
+               }
+     }
+
+annotate entity /LRN/437_C_CLASS with
+  {
+    @UI.facet: [ { id:            'Class',
+                    purpose:       #STANDARD,
+                    type:          #IDENTIFICATION_REFERENCE,
+                    label:         'Booking Class',
+                    position:      10 }
+               ]
+
+    @UI: {
+           lineItem:       [ { position: 10 } ],
+           identification: [ { position: 10 } ]
+         }
+    ClassID;
+    @UI: {
+           lineItem:       [ { position: 20 } ],
+           identification: [ { position: 20 } ]
+         }
+    Priority;
+    @UI: {
+           lineItem:       [ { position: 30 } ],
+           identification: [ { position: 30 } ]
+         }
+    Description;
+    @UI.hidden: true
+    AllElements;
+  }

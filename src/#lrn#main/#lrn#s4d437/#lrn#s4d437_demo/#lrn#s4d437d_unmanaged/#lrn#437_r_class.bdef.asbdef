@@ -1,0 +1,21 @@
+unmanaged implementation in class /lrn/bp_437_r_class unique;
+strict ( 2 );
+
+define behavior for /LRN/437_R_Class alias Class
+//late numbering
+lock master
+authorization master ( instance )
+etag master AllElements
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly : update ) ClassID;
+
+  mapping for /lrn/437_s_class
+      control /lrn/437_s_classx corresponding
+    {
+      ClassID = class_id;
+    }
+}

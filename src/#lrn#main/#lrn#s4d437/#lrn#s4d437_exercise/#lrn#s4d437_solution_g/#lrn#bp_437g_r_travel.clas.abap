@@ -1,0 +1,9 @@
+CLASS /lrn/bp_437g_r_travel DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF /lrn/437g_r_travel .
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS /LRN/BP_437G_R_TRAVEL IMPLEMENTATION.
+ENDCLASS.

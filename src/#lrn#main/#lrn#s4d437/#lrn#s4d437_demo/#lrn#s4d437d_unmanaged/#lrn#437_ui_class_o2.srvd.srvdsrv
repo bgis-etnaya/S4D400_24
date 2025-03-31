@@ -1,0 +1,4 @@
+@EndUserText.label: 'Booking Class'
+define service /LRN/437_UI_CLASS_O2 {
+  expose /LRN/437_C_CLASS;
+}

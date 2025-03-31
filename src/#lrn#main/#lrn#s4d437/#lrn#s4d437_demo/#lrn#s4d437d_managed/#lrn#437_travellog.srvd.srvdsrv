@@ -1,0 +1,4 @@
+@EndUserText.label: 'Log for Created Travels'
+define service /LRN/437_TRAVELLOG {
+  expose /LRN/437_C_TRAVELLOG as TravelLog;
+}

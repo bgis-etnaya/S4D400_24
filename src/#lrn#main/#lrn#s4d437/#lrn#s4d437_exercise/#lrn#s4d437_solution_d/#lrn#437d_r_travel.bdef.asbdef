@@ -1,0 +1,120 @@
+managed implementation in class /lrn/bp_437d_r_travel unique;
+strict ( 2 );
+
+with draft;
+
+define behavior for /LRN/437d_R_Travel alias Travel
+persistent table /lrn/437d_travel   ##UNMAPPED_FIELD
+draft table /lrn/437d_trvl_d
+lock master total etag ChangedAt
+authorization master ( instance )
+etag master LocChangedAt  //ChangedAt
+early numbering
+{
+  create;
+  update ( features : instance );
+  delete;
+
+  action ( features : instance ) cancel_travel;
+
+  field ( readonly )
+  AgencyId,
+  TravelId;
+
+  field ( readonly )
+  Status,
+  Duration,
+  ChangedAt,
+  ChangedBy,
+  LocChangedAt;
+
+
+  field ( mandatory )
+  Description,
+  EndDate;
+
+  field ( features : instance )
+  CustomerId,
+  BeginDate;
+
+  validation validateDescription on save
+  { create;
+    field Description;
+  }
+
+  validation validateCustomer on save
+  { create;
+    field CustomerId;
+  }
+
+  validation validateBeginDate on save
+  { create;
+    field BeginDate;
+  }
+
+  validation validateEndDate on save
+  { create;
+    field EndDate;
+  }
+
+  validation validateDateSequence on save
+  { create;
+    field BeginDate, EndDate;
+  }
+
+  determination determineDuration on save
+  { field BeginDate, EndDate;
+  }
+
+
+  determine action checkCustomer
+  {
+    validation validateCustomer;
+  }
+
+  determine action adjustDuration
+  {
+    validation validateBeginDate;
+    validation validateEnddate;
+    validation validateDateSequence;
+
+    determination determineDuration;
+  }
+
+   side effects
+   {
+     determine action adjustDuration
+          executed on field BeginDate,
+                      field EndDate
+              affects field Duration,
+                      messages
+                      ;
+    }
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare
+  {
+    validation validateDescription;
+    validation validateCustomer;
+    validation validateBeginDate;
+    validation validateEndDate;
+    validation validateDateSequence;
+  }
+
+
+  mapping for /lrn/437d_travel corresponding
+    {
+      AgencyID     = agency_ID;
+      TravelID     = travel_id;
+      CustomerID   = customer_id;
+      BeginDate    = begin_date;
+      EndDate      = end_date;
+      ChangedAt    = changed_at;
+      ChangedBy    = changed_by;
+      LocChangedAt = loc_changed_at;
+    }
+
+}

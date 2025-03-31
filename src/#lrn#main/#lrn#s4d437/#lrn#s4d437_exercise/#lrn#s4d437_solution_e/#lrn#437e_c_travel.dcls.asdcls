@@ -1,0 +1,8 @@
+@EndUserText.label: 'Access Control for Flight Travel Projection'
+@MappingRole: true
+define role /LRN/437E_C_TRAVEL {
+    grant select on /LRN/437e_C_Travel
+    where inheriting conditions 
+     from entity /LRN/437e_R_Travel;
+                        
+}

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>/LRN/S4D437</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Messages for Course S4D437</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Transparent table &amp;1 does not exist or is not active</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Transparent table &amp;1 is not compatible with template</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>The table is already empty</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>The table still contains data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>The table does not have a GUID field</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>100</MSGNR>
+     <TEXT>You successfully issued a message</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>Error creating the new BO instance</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>Error updating BO instance &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>Error reading BO instance &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>110</MSGNR>
+     <TEXT>Status of travel &amp;1 is already &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>120</MSGNR>
+     <TEXT>You successfully cancelled the travel</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>130</MSGNR>
+     <TEXT>This travel is already cancelled</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>140</MSGNR>
+     <TEXT>No change authorization for travel agency &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>200</MSGNR>
+     <TEXT>Please make an entry</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>210</MSGNR>
+     <TEXT>Customer &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>220</MSGNR>
+     <TEXT>Wrong sequence of start date and end date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>230</MSGNR>
+     <TEXT>Start date must not be in the past</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>240</MSGNR>
+     <TEXT>End date must not be in the past</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>310</MSGNR>
+     <TEXT>Flight date must not be in the past</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>320</MSGNR>
+     <TEXT>Flight date must not be before start date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>330</MSGNR>
+     <TEXT>Flight &amp;1 &amp;2 on &amp;3 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>500</MSGNR>
+     <TEXT>Booking Class &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>502</MSGNR>
+     <TEXT>No authorization to update booking class &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>504</MSGNR>
+     <TEXT>Please enter a booking class</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>506</MSGNR>
+     <TEXT>No authorization to delete booking class &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>510</MSGNR>
+     <TEXT>Please provide some attributes for the booking class</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>515</MSGNR>
+     <TEXT>Booking class &amp;1 is already marked for deletion</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>600</MSGNR>
+     <TEXT>Travel Agency &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>601</MSGNR>
+     <TEXT>No authorization to create travel agency &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>602</MSGNR>
+     <TEXT>No authorization to update travel agency &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>603</MSGNR>
+     <TEXT>No authorization to read travel agency &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>604</MSGNR>
+     <TEXT>Please enter a travel agency number</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>605</MSGNR>
+     <TEXT>Travel Agency &amp;1 is locked by another user</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>606</MSGNR>
+     <TEXT>No authorization to delete travel agency &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>610</MSGNR>
+     <TEXT>Please provide some attributes for the travel agency</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>611</MSGNR>
+     <TEXT>External numbering not supported for travel agencies</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>612</MSGNR>
+     <TEXT>Cannot retrieve new travel agency number</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>615</MSGNR>
+     <TEXT>Travel agency &amp;1 is already marked for deletion</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>620</MSGNR>
+     <TEXT>Please enter a country</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>621</MSGNR>
+     <TEXT>Country &amp;1 is invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>622</MSGNR>
+     <TEXT>Please enter a city</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>623</MSGNR>
+     <TEXT>City &amp;1 in coutry &amp;2 is invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>624</MSGNR>
+     <TEXT>Please enter a currency code</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>625</MSGNR>
+     <TEXT>Currency code &amp;1 is invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>626</MSGNR>
+     <TEXT>Please enter a language</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>627</MSGNR>
+     <TEXT>language &amp;1 is invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>650</MSGNR>
+     <TEXT>Error - cannot save your changes</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>700</MSGNR>
+     <TEXT>Error deleting travel item &amp;1 (not found)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>701</MSGNR>
+     <TEXT>Successfully deleted travel item &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>710</MSGNR>
+     <TEXT>Error creating travel item &amp;1 (already exists)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>711</MSGNR>
+     <TEXT>Successfully created travel item &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>720</MSGNR>
+     <TEXT>Error updating travel item &amp;1 (not found)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LRN/S4D437</ARBGB>
+     <MSGNR>721</MSGNR>
+     <TEXT>Successfully updated travel item &amp;1</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

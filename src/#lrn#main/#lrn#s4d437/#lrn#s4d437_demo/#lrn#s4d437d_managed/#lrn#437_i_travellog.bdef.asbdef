@@ -1,0 +1,6 @@
+interface;
+
+define behavior for /LRN/437_I_TRAVELLOG alias TravelLog
+{
+  use create;
+}

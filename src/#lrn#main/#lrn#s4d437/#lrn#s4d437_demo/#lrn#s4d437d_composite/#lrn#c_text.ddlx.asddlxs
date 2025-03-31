@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+
+@UI: {
+   headerInfo: {
+     typeName: 'Text',
+     typeNamePlural: 'Texts',
+     title:  {  label: 'Demo: Composite BO' },
+     description: {  label: 'Demo: Composite BO' }
+               }
+     }
+
+annotate entity /LRN/C_Text with
+  {
+    @UI.facet: [ { id:            'Text',
+                    purpose:       #STANDARD,
+                    type:          #IDENTIFICATION_REFERENCE,
+                    label:         'Text',
+                    position:      10 },
+
+
+                  { id:            'TextLine',
+                    purpose:       #STANDARD,
+                    type:          #LINEITEM_REFERENCE,
+                    label:         'Text Line',
+                    position:      20,
+                    targetElement: '_Line'}
+                ]
+
+
+    @UI: {
+            lineItem:       [ { position: 10, importance: #HIGH } ],
+            identification: [ { position: 10, importance: #HIGH } ],
+            selectionField: [ { position: 10  }]
+          }
+    TextOwner;
+    @UI: {
+           lineItem:       [ { position: 20, importance: #HIGH } ],
+           identification: [ { position: 20, importance: #HIGH } ]
+         }
+    LinesCount;
+    @UI.hidden: true
+    TextUuid;
+
+  }

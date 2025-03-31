@@ -1,0 +1,45 @@
+@Metadata.layer: #CORE
+
+@UI: {
+       headerInfo:
+        {
+          typeName: 'Text Line',
+          typeNamePlural: 'Text Lines'
+        }
+     }
+annotate entity /LRN/C_Line with
+  {
+    @UI.facet: [ { id:            'TextLine',
+                     purpose:       #STANDARD,
+                     type:          #IDENTIFICATION_REFERENCE,
+                     label:         'Text Line',
+                     position:      10 },
+
+                  { id:            'Word',
+                     purpose:       #STANDARD,
+                     type:          #LINEITEM_REFERENCE,
+                     label:         'Word',
+                     position:      20,
+                     targetElement: '_Word'}
+
+               ]
+
+
+    @UI.hidden: true
+    LineUuid;
+    @UI: {
+             lineItem:       [ { position: 10, importance: #HIGH } ],
+             identification: [ { position: 10, importance: #HIGH } ]
+           }
+
+    LineNumber;
+
+    @UI: {
+             lineItem:       [ { position: 20, importance: #HIGH } ],
+             identification: [ { position: 20, importance: #HIGH } ]
+           }
+    WordsCount;
+    @UI.hidden: true
+    TextUuid;
+
+  }

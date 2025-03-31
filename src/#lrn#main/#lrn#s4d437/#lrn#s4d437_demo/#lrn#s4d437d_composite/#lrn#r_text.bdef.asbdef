@@ -1,0 +1,85 @@
+managed implementation in class /lrn/bp_r_text unique;
+strict ( 2 );
+
+define behavior for /LRN/R_Text alias Text
+persistent table /lrn/text
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  association _Line { create; }
+
+  determination set_owner on modify { create; }
+  action condense_text result [0..1] $self;
+
+  field ( readonly, numbering : managed ) TextUUID;
+
+  mapping for /lrn/text corresponding
+    {
+      TextUUID   = text_uuid;
+      TextOwner  = text_owner;
+      LinesCount = lines_count;
+    }
+
+}
+
+define behavior for /LRN/R_Line alias Line
+persistent table /lrn/line
+lock dependent by _Text
+authorization dependent by _Text
+//etag master <field_name>
+{
+  update;
+  delete;
+
+  association _Text;
+  association _Word { create; }
+
+  determination set_number on modify { create; }
+  determination update_Count on modify { create; delete; }
+
+
+  field ( readonly, numbering : managed ) LineUuid;
+  field ( readonly ) TextUuid;
+
+  mapping for /lrn/line corresponding
+    {
+      LineUUID   = Line_uuid;
+      LineNumber = line_number;
+      WordsCount = words_count;
+      TextUUID   = text_uuid;
+    }
+
+}
+
+define behavior for /LRN/R_Word alias Word
+persistent table /lrn/word
+lock dependent by _Text
+authorization dependent by _Text
+//etag master <field_name>
+{
+  update;
+  delete;
+  association _Line;
+  association _Text { }
+
+  validation textNotEmpty on save { create; update; field Text; }
+  determination set_number on modify { create; }
+  determination update_Count on modify { create; delete; }
+
+  field ( readonly, numbering : managed ) WordUuid;
+  field ( readonly ) LineUuid, TextUuid;
+
+  mapping for /lrn/word corresponding
+    {
+      WordUUID   = word_uuid;
+      WordNumber = word_number;
+      LineUUID   = line_uuid;
+      TextUuid   = text_uuid;
+    }
+
+
+}

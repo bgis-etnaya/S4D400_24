@@ -1,0 +1,49 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'TravelLog',
+    typeNamePlural: 'TravelLogs'
+  }
+}
+annotate view /LRN/437_C_TRAVELLOG with
+  {
+    @UI.facet: [ {
+      id: 'idIdentification',
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'TravelLog',
+      position: 10
+    } ]
+
+    @UI.hidden: true
+    UUID;
+
+    @UI.lineItem: [ {
+      position: 20
+          } ]
+    @UI.identification: [ {
+      position: 20
+    } ]
+    AgencyID;
+
+    @UI.lineItem: [ {
+      position: 30
+
+    } ]
+    @UI.identification: [ {
+      position: 30
+    } ]
+    TravelID;
+
+    @UI.lineItem: [ {
+      position: 10
+    } ]
+    @UI.identification: [ {
+      position: 10
+    } ]
+    @UI.selectionField: [{
+            position: 10 }]
+    Origin;
+
+    @UI.hidden: true
+    LocChangedAt;
+  }

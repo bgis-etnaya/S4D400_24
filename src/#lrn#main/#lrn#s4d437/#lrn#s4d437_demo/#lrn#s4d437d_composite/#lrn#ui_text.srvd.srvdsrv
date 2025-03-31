@@ -1,0 +1,6 @@
+@EndUserText.label: 'Text By User - Service Definition for Composition'
+define service /LRN/UI_Text {
+  expose /LRN/C_Text;
+  expose /LRN/C_Line;
+  expose /LRN/C_Word;
+}

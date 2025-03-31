@@ -1,0 +1,46 @@
+projection;
+strict ( 2 );
+use draft;
+use side effects;
+
+define behavior for /LRN/437g_C_Travel //alias <alias_name>
+use etag
+{
+  use create;
+  use update;
+  //    use delete;
+
+  use action cancel_travel;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Prepare;
+  use action Resume;
+
+  use action checkCustomer;
+
+  use action adjustDuration;
+
+  side effects
+  {
+    determine action checkCustomer
+         executed on field customerID
+             affects messages;
+  }
+
+  use association _TravelItem { create; with draft; }
+
+}
+
+define behavior for /LRN/437g_C_TravelItem // alias Item
+use etag
+{
+
+  use update;
+  //  use delete;
+
+  use association _Travel { with draft; }
+
+
+}

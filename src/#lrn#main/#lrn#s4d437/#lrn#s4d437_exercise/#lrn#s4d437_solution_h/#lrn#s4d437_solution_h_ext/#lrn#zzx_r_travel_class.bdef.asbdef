@@ -1,0 +1,31 @@
+extension implementation in class /lrn/bp_zzx_r_travel_class unique;
+
+extend behavior for Travel
+{
+  extend draft determine action Prepare
+  {
+    validation Item~/LRN/validateClass;
+  }
+}
+
+extend behavior for Item
+with additional save
+{
+  validation /LRN/validateClass on save
+  {
+    create;
+    field /LRN/classZIT;
+  }
+
+  determine action ( authorization : none ) /LRN/checkClass
+  {
+    validation /LRN/validateClass;
+  }
+
+   side effects
+   {
+    determine action /LRN/checkClass
+         executed on field /LRN/classZIT
+             affects messages;
+   }
+}

@@ -1,0 +1,34 @@
+managed implementation in class /LRN/BP_437_TRAVELLOG unique;
+strict ( 2 );
+
+define behavior for /LRN/437_R_TRAVELLOG alias TravelLog
+persistent table /lrn/437_trlog
+etag master LocChangedAt
+lock master
+authorization master ( global )
+
+{
+
+  field ( readonly, numbering : managed )
+  UUID;
+
+  field ( readonly )
+  ChangedAt,
+  ChangedBy,
+  LocChangedAt;
+
+  create;
+  update;
+  delete;
+
+  mapping for /lrn/437_trlog
+    {
+      UUID         = uuid;
+      AgencyID     = agency_id;
+      TravelID     = travel_id;
+      Origin       = origin;
+      ChangedAt    = changed_at;
+      ChangedBy    = changed_by;
+      LocChangedAt = loc_changed_at;
+    }
+}

@@ -1,0 +1,27 @@
+managed implementation in class /lrn/bp_437b_r_travel unique;
+strict ( 2 );
+
+define behavior for /LRN/437b_R_Travel alias Travel
+persistent table /lrn/437b_travel
+lock master
+authorization master ( instance )
+etag master ChangedAt
+{
+  create;
+  update;
+  delete;
+
+  action cancel_travel;
+
+  mapping for /lrn/437b_travel corresponding
+    {
+      AgencyID   = agency_ID;
+      TravelID   = travel_id;
+      CustomerID = customer_id;
+      BeginDate  = begin_date;
+      EndDate    = end_date;
+      ChangedAt  = changed_at;
+      ChangedBy  = changed_by;
+    }
+
+}
